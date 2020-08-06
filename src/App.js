@@ -28,7 +28,7 @@ const App = () => {
       // if it does, add the correct value to the new description property on each object
 
       heroesList.map((hero) => {
-        dota_heroes.map((image) =>
+        return dota_heroes.map((image) =>
           hero.localized_name === image.dotaName
             ? (hero.description = image.description)
             : 'null'

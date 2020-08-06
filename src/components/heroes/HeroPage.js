@@ -21,7 +21,7 @@ const HeroPage = ({ filteredHeroes }) => {
     });
     setHero(newHero[0]);
     setLoading(false);
-  }, [setHero, filteredHeroes]);
+  }, [setHero, heroName, filteredHeroes]);
 
   return loading ? (
     <Spinner />
