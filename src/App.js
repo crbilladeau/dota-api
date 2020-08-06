@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
-import Header from './components/Header';
-import HeroGrid from './components/heroes/HeroGrid';
-import Search from './components/Search';
 import Container from 'react-bootstrap/Container';
-import { images } from './images/imagedata';
+import { dota_heroes } from './data/herodata';
+import Header from './components/Header';
+import Search from './components/Search';
+import HeroGrid from './components/heroes/HeroGrid';
+import HeroPage from './components/heroes/HeroPage';
+import Error404 from './components/Error404';
 import './App.css';
 
 const App = () => {
@@ -14,34 +17,33 @@ const App = () => {
   const [search, setSearch] = useState('');
   const [loading, setLoading] = useState(true);
 
-  const url = 'https://api.opendota.com/api/heroes';
+  const baseURL = 'https://api.opendota.com/api/heroStats';
 
   useEffect(() => {
     const fetchHeroes = async () => {
-      const response = await axios(`${url}`);
+      const response = await axios(`${baseURL}`);
       const heroesList = response.data;
 
-      // map thru the data returned from OpenDota and check to see if the hero matches the name in the images array
-      // if it does, add the correct value to the new image property on each object
+      // map thru the data returned from OpenDota and check to see if the hero matches the name in the extra data array
+      // if it does, add the correct value to the new description property on each object
 
       heroesList.map((hero) => {
-        images.map((image) =>
+        dota_heroes.map((image) =>
           hero.localized_name === image.dotaName
-            ? (hero.url = image.url)
+            ? (hero.description = image.description)
             : 'null'
         );
       });
 
-      // alphabetically sort heroes by object property
-      // TODO: Make this more unique
+      // sort heroes by object property
 
-      function alphabeticalSort(property) {
+      function sortByProp(property) {
         return (a, b) => {
           return a[property].localeCompare(b[property]);
         };
       }
 
-      const sortedHeroes = heroesList.sort(alphabeticalSort('localized_name'));
+      const sortedHeroes = heroesList.sort(sortByProp('localized_name'));
 
       // set new hooks state
       setHeroes(sortedHeroes);
@@ -52,6 +54,8 @@ const App = () => {
     fetchHeroes();
   }, []);
 
+  // search functionality
+
   useEffect(() => {
     setFilteredHeroes(
       heroes.filter((hero) =>
@@ -59,18 +63,36 @@ const App = () => {
       )
     );
   }, [search, heroes]);
-
   return (
     <AppContainer className='mx-auto'>
       <Header />
-      <Search setSearch={setSearch} search={search} />
-      <HeroGrid loading={loading} filteredHeroes={filteredHeroes} />
+      <Switch>
+        <Route
+          exact
+          path='/'
+          render={() => (
+            <>
+              <Search setSearch={setSearch} search={search} />
+              <HeroGrid
+                filteredHeroes={filteredHeroes}
+                loading={loading}
+                setSearch={setSearch}
+              />
+            </>
+          )}
+        />
+        <Route
+          path='/:heroName'
+          render={() => <HeroPage filteredHeroes={filteredHeroes} />}
+        />
+        <Route component={Error404} />
+      </Switch>
     </AppContainer>
   );
 };
 
 const AppContainer = styled(Container)`
-  max-width: 75vw;
+  max-width: 90vw;
 `;
 
 export default App;

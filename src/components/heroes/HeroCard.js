@@ -4,21 +4,25 @@ import styled from 'styled-components';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 
-const HeroCard = ({ hero }) => {
+const HeroCard = ({ hero, setSearch }) => {
+  const heroName = hero.localized_name;
   return (
-    <HeroContainer xl={2} lg={3} md={3} sm={4} xs={6} className='p-0'>
-      <Link to={`/heroes/${hero.localized_name}`}>
-        <HeroPortrait src={hero.url} alt={hero.localized_name} />
+    <Container xl={1} lg={2} md={3} sm={4} xs={6} className='p-0'>
+      <Link to={`/${heroName}`} onClick={() => setSearch('')}>
+        <HeroPortrait
+          src={`http://cdn.dota2.com${hero.img}`}
+          alt={hero.localized_name}
+        />
       </Link>
-    </HeroContainer>
+    </Container>
   );
 };
 
-const HeroContainer = styled(Col)`
+const Container = styled(Col)`
   &:hover {
     cursor: pointer;
-    transform: scale(1.3);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    transform: scale(1.2);
+    transition: all 700ms cubic-bezier(0.175, 0.885, 0, 1);
     z-index: 1;
   }
 `;

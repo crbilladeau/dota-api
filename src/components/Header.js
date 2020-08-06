@@ -1,13 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import dotalogo from '../images/dotalogo.png';
+import dotalogo2 from '../images/dotalogo2.png';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
 const Header = () => {
   return (
     <LogoContainer className='mx-auto mt-5'>
-      <Logo src={dotalogo} alt='dota logo' />
+      <Link to='/'>
+        <Logo src={dotalogo2} alt='dota logo' />
+      </Link>
     </LogoContainer>
   );
 };

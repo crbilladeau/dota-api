@@ -28,11 +28,23 @@ const SearchContainer = styled(Row)`
 
 const SearchBar = styled.input`
   border: gray 2px solid;
-  border-radius: 15px;
+  border-radius: 10px;
+  background-color: #424242;
+  color: whitesmoke;
   font-size: 20px;
   height: 100%;
   width: 100%;
   padding: 1em 0 1em 1.5em;
+  &:focus {
+    background-color: #424242;
+    border-color: #ff2f2f;
+    box-shadow: 6px 6px #ff4848;
+    color: whitesmoke;
+  }
+  ::placeholder {
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #333;
+  }
 `;
 
 export default Search;
