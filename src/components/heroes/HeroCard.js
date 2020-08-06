@@ -8,7 +8,7 @@ const HeroCard = ({ hero, setSearch }) => {
   const heroName = hero.localized_name;
   return (
     <Container xl={1} lg={2} md={3} sm={4} xs={6} className='p-0'>
-      <Link to={`/dota-api/${heroName}`} onClick={() => setSearch('')}>
+      <Link to={`/${heroName}`} onClick={() => setSearch('')}>
         <HeroPortrait
           src={`http://cdn.dota2.com${hero.img}`}
           alt={hero.localized_name}

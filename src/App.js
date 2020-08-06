@@ -69,7 +69,7 @@ const App = () => {
       <Switch>
         <Route
           exact
-          path='/dota-api'
+          path='/'
           render={() => (
             <>
               <Search setSearch={setSearch} search={search} />
@@ -82,7 +82,7 @@ const App = () => {
           )}
         />
         <Route
-          path='/dota-api/:heroName'
+          path='/:heroName'
           render={() => <HeroPage filteredHeroes={filteredHeroes} />}
         />
         <Route component={Error404} />
