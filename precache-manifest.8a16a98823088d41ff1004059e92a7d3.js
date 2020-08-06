@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a19e5fafe583a8ae2fd55011e3cbc000",
+    "revision": "59d5d6e2963dc5c98bc5920fe0e2455c",
     "url": "/dota-api/index.html"
   },
   {
-    "revision": "543e0de6a3edecd0ae85",
+    "revision": "7189c61a165867b1830e",
     "url": "/dota-api/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "9921d00a8fabfb4e59d1",
+    "revision": "e63099fb9037dd919502",
     "url": "/dota-api/static/css/main.511a6aba.chunk.css"
   },
   {
-    "revision": "543e0de6a3edecd0ae85",
-    "url": "/dota-api/static/js/2.2419ed65.chunk.js"
+    "revision": "7189c61a165867b1830e",
+    "url": "/dota-api/static/js/2.560ae47c.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/dota-api/static/js/2.2419ed65.chunk.js.LICENSE.txt"
+    "url": "/dota-api/static/js/2.560ae47c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9921d00a8fabfb4e59d1",
-    "url": "/dota-api/static/js/main.89115196.chunk.js"
+    "revision": "e63099fb9037dd919502",
+    "url": "/dota-api/static/js/main.850737c3.chunk.js"
   },
   {
     "revision": "42f25dca5e4d4f626687",
