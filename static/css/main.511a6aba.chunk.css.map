@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,EACE,qBAAsB,CACtB,QAAS,CACT,SACF,CAEA,gBAGE,wBACF","file":"main.511a6aba.chunk.css","sourcesContent":["* {\r\n  box-sizing: border-box;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\nhtml,\r\nbody,\r\n#root {\r\n  background-color: #292929;\r\n}\r\n"]}
