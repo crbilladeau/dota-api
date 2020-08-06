@@ -108,10 +108,11 @@ const HeroInfo = styled(Col)`
   color: #d9d9d9;
   h2 {
     font-size: 3rem;
+    @media screen and (max-width: 425px) {
+      font-size: 2rem;
+    }
   }
-  @media screen and (max-width: 425px) {
-    font-size: 2rem;
-  }
+
   h2,
   h4 {
     text-transform: uppercase;
