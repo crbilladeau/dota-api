@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dota-api/static/css/main.511a6aba.chunk.css",
-    "main.js": "/dota-api/static/js/main.850737c3.chunk.js",
-    "main.js.map": "/dota-api/static/js/main.850737c3.chunk.js.map",
+    "main.js": "/dota-api/static/js/main.f4c4166f.chunk.js",
+    "main.js.map": "/dota-api/static/js/main.f4c4166f.chunk.js.map",
     "runtime-main.js": "/dota-api/static/js/runtime-main.718aae4d.js",
     "runtime-main.js.map": "/dota-api/static/js/runtime-main.718aae4d.js.map",
     "static/css/2.af3c1da9.chunk.css": "/dota-api/static/css/2.af3c1da9.chunk.css",
     "static/js/2.560ae47c.chunk.js": "/dota-api/static/js/2.560ae47c.chunk.js",
     "static/js/2.560ae47c.chunk.js.map": "/dota-api/static/js/2.560ae47c.chunk.js.map",
     "index.html": "/dota-api/index.html",
-    "precache-manifest.8a16a98823088d41ff1004059e92a7d3.js": "/dota-api/precache-manifest.8a16a98823088d41ff1004059e92a7d3.js",
+    "precache-manifest.de052c154b81f889232ea1ab0f825373.js": "/dota-api/precache-manifest.de052c154b81f889232ea1ab0f825373.js",
     "service-worker.js": "/dota-api/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/dota-api/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.511a6aba.chunk.css.map": "/dota-api/static/css/main.511a6aba.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.560ae47c.chunk.js",
     "static/css/main.511a6aba.chunk.css",
-    "static/js/main.850737c3.chunk.js"
+    "static/js/main.f4c4166f.chunk.js"
   ]
 }
