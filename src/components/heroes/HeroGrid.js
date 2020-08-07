@@ -8,7 +8,7 @@ const HeroGrid = ({ loading, filteredHeroes, setSearch }) => {
     <Spinner />
   ) : (
     <>
-      <Row className='my-4'>
+      <Row className='mx-1 justify-content-center'>
         {filteredHeroes.map((hero) => (
           <HeroCard key={hero.id} hero={hero} setSearch={setSearch} />
         ))}

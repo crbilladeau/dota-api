@@ -64,7 +64,7 @@ const App = () => {
     );
   }, [search, heroes]);
   return (
-    <AppContainer className='mx-auto'>
+    <AppContainer className='mx-sm-auto'>
       <Header />
       <Switch>
         <Route
@@ -92,7 +92,7 @@ const App = () => {
 };
 
 const AppContainer = styled(Container)`
-  max-width: 90vw;
+  /* max-width: 100vw; */
 `;
 
 export default App;

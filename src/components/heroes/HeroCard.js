@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 const HeroCard = ({ hero, setSearch }) => {
   const heroName = hero.localized_name;
   return (
-    <Container xl={1} lg={2} md={3} sm={4} xs={6} className='p-0'>
+    <Container xl={2} lg={3} md={4} sm={6} xs={8} className='p-0'>
       <Link to={`/${heroName}`} onClick={() => setSearch('')}>
         <HeroPortrait
           src={`http://cdn.dota2.com${hero.img}`}

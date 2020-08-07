@@ -17,6 +17,9 @@ const Header = () => {
 
 const LogoContainer = styled(Row)`
   width: 350px;
+  @media screen and (max-width: 425px) {
+    width: 200px;
+  }
 `;
 
 const Logo = styled(Image)`

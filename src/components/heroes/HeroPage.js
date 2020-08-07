@@ -28,9 +28,9 @@ const HeroPage = ({ filteredHeroes }) => {
   ) : (
     <>
       {hero ? (
-        <HeroPageStyles className='my-5 p-3-md-3' fluid>
+        <HeroPageStyles className='my-5' fluid>
           <Row className='justify-content-around align-items-center'>
-            <HeroInfo lg={6} md={10} sm={12}>
+            <HeroInfo lg={6} md={10} sm={12} className='px-md-0 mx-md-0'>
               <h2 className='pt-5 px-2'>
                 {hero.localized_name}
                 <img
@@ -63,9 +63,9 @@ const HeroPage = ({ filteredHeroes }) => {
               <Col>
                 <StatsTable hero={hero} />
               </Col>
-              <Bio className='px-md-1 my-4'>
+              <Bio className='my-4 px-md-0'>
                 <h4>Bio</h4>
-                <p className='p-2'>{hero.description}</p>
+                <p>{hero.description}</p>
               </Bio>
             </HeroInfo>
 
