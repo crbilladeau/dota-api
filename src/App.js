@@ -64,7 +64,7 @@ const App = () => {
     );
   }, [search, heroes]);
   return (
-    <AppContainer className='mx-sm-auto'>
+    <AppContainer className='mx-sm-auto my-5'>
       <Header />
       <Switch>
         <Route
