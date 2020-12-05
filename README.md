@@ -5,13 +5,13 @@
     <img src="public/favicon.ico" alt="Logo" width="32" height="32">
   </a>
 
-  <h2 align="center">Dota 2 App</h3>
+  <h2 align="center">Dota Stats</h3>
 
   <p align="center">
-    A simple React app that pulls and displays Dota 2 hero information from the Open Dota API and the Dota 2 website.
+    Dota Stats is a simple React app that pulls and displays Dota 2 hero information from the Open Dota API and the Dota 2 website.
     <br />
     <br />
-     <img src="https://github.com/crbilladeau/portfolio/blob/master/src/assets/images/dota.png?raw=true" alt="Dota App Screenshot" width="1000">
+     <img src="https://github.com/crbilladeau/portfolio/blob/master/src/assets/images/dota-stats.png?raw=true" alt="Dota App Screenshot" width="1000">
     <br />
   </p>
   <h2 align="center"><a href="https://crbilladeau.github.io/dota-api/#/">View Demo</a></h2>
@@ -53,8 +53,7 @@
 
 <div align="center">
    <div style="display: flex; align-items: flex-start;">
-     <img src="https://github.com/crbilladeau/portfolio/blob/master/src/assets/images/dota.png?raw=true" alt="Dota Mobile Screenshot" width="400">
-     <img src="https://github.com/crbilladeau/portfolio/blob/master/src/assets/images/dota.png?raw=true" alt="Dota Mobile Screenshot" width="400">
+     <img src="https://github.com/crbilladeau/portfolio/blob/master/src/assets/images/dota-stats2.png?raw=true" alt="Dota Stats Screenshot" width="1000">
   </div>
 </div>
 
