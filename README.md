@@ -54,7 +54,6 @@
 <div align="center">
    <div style="display: flex; align-items: flex-start;">
      <img src="https://github.com/crbilladeau/portfolio/blob/master/src/assets/images/dota-stats2.png?raw=true" alt="Dota Stats Screenshot" width="1000">
-     <br />
   </div>
 </div>
 
