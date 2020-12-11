@@ -56,7 +56,8 @@
      <img src="https://github.com/crbilladeau/portfolio/blob/master/src/assets/images/dota-stats2.png?raw=true" alt="Dota Stats Screenshot" width="1000">
   </div>
 </div>
-<br />
+
+
 A **React** app that consumes the **Open Dota API** and shows a list of Dota 2 heroes and information on each hero. Utilizes **React Router** to redirect to custom hero pages with information pulled from the API and Dota 2's website. Styled with **React Bootstrap** and **styled components**.
 
 ### In Development
